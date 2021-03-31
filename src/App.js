@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-
+import { anotherName} from './actions/myaction'
 
 
 const App = (props) => {
@@ -24,7 +24,7 @@ const App = (props) => {
 
    const mapDispatchToProps = (dispatch) => {
       return {
-        changeName : (name) => {dispatch({type : 'Change_Name' , payload: name})}
+        changeName : (name) => {dispatch(anotherName(name))}
       }
    }
 
