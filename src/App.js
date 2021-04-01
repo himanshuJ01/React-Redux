@@ -9,7 +9,7 @@ const App = (props) => {
    return(
       <div className="App">
       <h1>Name {props.myname} </h1>
-     <button onClick={()=>{props.changeName("suresh")}}>Change name</button> 
+     <button onClick={()=>{props.changeName()}}>Change name</button> 
      </div>
      
     
